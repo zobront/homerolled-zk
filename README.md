@@ -42,7 +42,7 @@ x = 7
 z = 2
 ```
 
-Further, we have to calculate the intermediate values so that each element in the constraints (`x_squared`, `x_cubed`) is solved for.
+Further, we have to calculate the intermediate values so that each variable in the constraints (`x_squared`, `x_cubed`) is solved for.
 
 These are implemented in `witness.py` and imported into each example.
 
@@ -78,9 +78,7 @@ Code: [ec.py](./ec.py)
 
 To make this zero knowledge (or at least close to it, since someone could still test a guessed value for correctness), we can use elliptic curves.
 
-Again, we use the same R1CS constraints (and the original solution, since the field modulus of our curve is much larger than 529).
-
-We can't multiply elliptic curve points directly, which kind of breaks the whole `OUT = A * B` thing. But we can take bilinear pairings using elliptic curve points with field extensions.
+Again, we use the same R1CS constraints. We can't multiply elliptic curve points directly, which kind of breaks the whole `OUT = A * B` thing. But we can take bilinear pairings using elliptic curve points with field extensions.
 
 Instead of just creating one witness, we create two. Each uses the same witness values, but one is multiplied by the point G1 and the other is multiplied by G2. We take the dot product of these witnesses with the constraints, as in the previous examples.
 
