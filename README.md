@@ -88,6 +88,12 @@ When we "multiply" A and B, we take the bilinear pairing of the two points, whic
 
 We finally can compare these two G12 points to see if they are equal.
 
+## Next Steps
+
+- QAP
+- Groth16, Plonk, etc.
+- Remove reliance on py_ecc 🤔
+
 ## References
 
 All good ideas come from the [Rareskills ZK Book](https://www.rareskills.io/zk-book). All bad ideas are my own.
