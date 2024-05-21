@@ -2,7 +2,7 @@
 
 Simple example to build up to an (almost) ZK circuit in Python, based on the lessons from the [Rareskills ZK Book](https://www.rareskills.io/zk-book).
 
-## GOAL
+## Goal
 
 All three examples in this repo aim to accomplish the same goal:
 
@@ -30,7 +30,7 @@ While this can feel a bit unintuitive, this arrangement allows us to use matrix 
 
 These matrices are implemented in `r1cs.py` and imported into each example.
 
-## WITNESS
+## Witness
 
 Code: [witness.py](./witness.py)
 
@@ -46,7 +46,7 @@ Further, we have to calculate the intermediate values so that each element in th
 
 These are implemented in `witness.py` and imported into each example.
 
-## TRADITIONAL ARITHMETIC
+## Traditional Arithmetic
 
 Code: [arith.py](./arith.py)
 
@@ -60,7 +60,7 @@ This makes intuitive sense:
 
 This works! But it isn't at all zero knowledge, because we're just passing the values to test.
 
-## MODULAR ARITHMETIC
+## Modular Arithmetic
 
 Code: [mod.py](./mod.py)
 
@@ -72,7 +72,7 @@ Unfortunately, numpy doesn't support modular arithmetic, so this example include
 
 This also works! But it also isn't ZK, because we're just passing the values to test.
 
-## ELLIPTIC CURVES
+## Elliptic Curves
 
 Code: [ec.py](./ec.py)
 
@@ -88,6 +88,6 @@ When we "multiply" A and B, we take the bilinear pairing of the two points, whic
 
 We finally can compare these two G12 points to see if they are equal.
 
-## REFERENCES
+## References
 
 All good ideas come from the [Rareskills ZK Book](https://www.rareskills.io/zk-book). All bad ideas are my own.
