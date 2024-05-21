@@ -8,7 +8,7 @@ All three examples in this repo aim to accomplish the same goal:
 
 **Prove that we know an `x` and `z` to solve for `x^3 + 4x^2 - xz + 4 = 529`**
 
-The examples work up in complexity from R1CS on normal arithmetic up to a circuit on elliptic curves.
+The examples work up in complexity from R1CS on normal arithmetic through using modular arithmetic and finally to a circuit on elliptic curves.
 
 ## R1CS
 
